@@ -14,7 +14,9 @@ To write a Python program that counts the number of lines in a text file `story.
 ## 🧾 Program
 
 # Create sample file (for testing)
+
 with open("story.txt", "w") as file:
+
     file.write("Today is a sunny day.\n")
     file.write("The weather is nice.\n")
     file.write("This is a simple story.\n")
@@ -22,9 +24,11 @@ with open("story.txt", "w") as file:
     file.write("Text processing is easy in Python.\n")
 
 # Count lines not starting with 'T'
+
 count = 0
 
 with open("story.txt", "r") as file:
+
     for line in file:
         if line and line[0] != 'T':
             count += 1
